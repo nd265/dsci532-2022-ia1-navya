@@ -4,8 +4,9 @@ import altair as alt
 from vega_datasets import data
 
 
-app = Dash(__name__, external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
 
+app = Dash(__name__, external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
+server=app.server
 
 metrics={'life_expectancy':'Life Expectancy', 'child_mortality':'Child Mortality', 'pop_density':'Population Density'}
 # def plot_world():
@@ -69,6 +70,6 @@ app.layout = html.Div([
 
 
 
-
 if __name__ == '__main__':
     app.run_server(debug=True)
+    
