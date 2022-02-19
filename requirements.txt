@@ -2,3 +2,4 @@ pandas
 gunicorn
 altair
 dash
+vega_datasets
